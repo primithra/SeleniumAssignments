@@ -19,4 +19,25 @@ public class RemoveDuplicatesWords {
 	 * e) Print the Set values which is having unique words
 	 */
 }
+	public static void main(String[] args) {
+		
+		String text = "We learn java basics as part of java sessions in java week1";
+		
+		String[] split1 = text.split(" ");
+		
+		Set<String> set = new LinkedHashSet<>();
+		
+		for (int i = 0; i < split1.length; i++)
+		{
+			set.add(split1[i]);
+		}
+		
+		System.out.println(set);
+		//use join to set to string with space as deliimiter
+		String removedString = String.join(" ", set);
+		System.out.println(removedString);
+		
+		}
+
+}
 
